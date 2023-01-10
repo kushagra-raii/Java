@@ -1,0 +1,20 @@
+# IDEA files
+*.iml
+*.ipr
+*.iws
+
+# Binaries
+*.class
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Log files
+*.log
+
+# Local configuration files
+*.properties
+*.yml
