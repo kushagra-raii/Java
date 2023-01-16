@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//
 public class Main {
     public static void main(String[] args) {
         Scanner scr = new Scanner(System.in);
@@ -16,8 +16,8 @@ public class Main {
 //        problem 2 Sum stream of integer
         int nu=0,summ=0;
         while (nu!=-1){
-            summ = summ +n;
-            n = scr.nextInt();
+            summ = summ +nu;
+            nu = scr.nextInt();
         }
         System.out.println(summ);
 
@@ -64,15 +64,15 @@ public class Main {
         for (x=0;digitxy!=0;x++){
             tempo = digitxy%10;
             mul = mul *10 +tempo;
-            digitx = digitxy/10;
+            digitxy = digitxy/10;
         }
         System.out.println(mul);
 
 
 //        problem 8: sum = 1-2+3-4+5...n
         int jj,numb= scr.nextInt(),ans=0;
-        for (jj=1;ii<=numb;jj++){
-            if (ii%2==1) ans = ans +jj;
+        for (jj=1;jj<=numb;jj++){
+            if (jj%2==1) ans = ans +jj;
             else ans = ans-jj;
         }
         System.out.println(ans);
@@ -83,14 +83,14 @@ public class Main {
         for (int f=1;f<=number;f++){
             mult *=f;
         }
-        System.out.println(mul);
+        System.out.println(mult);
 
 //        problem 10:a raise to b
         int a= scr.nextInt(),b= scr.nextInt(),multi=1;
-        for (int h=1;ii<=b;h++){
+        for (int h=1;h<=b;h++){
             multi*=a;
         }
-        System.out.println(mul);
+        System.out.println(multi);
 
 
 //        problem 11:rectangle Pattern
@@ -247,9 +247,49 @@ public class Main {
             }
             System.out.println();
         }
+//
+//        problem 22:Fibonacci Series
+        int ekno =1;
+        int dusrano =1;
+
+        System.out.print(ekno + " " + dusrano + " ");
+        for (int i = 2; i < r; i++) {
+            int tisrano = ekno + dusrano;
+            System.out.print(tisrano + " ");
+            ekno = dusrano;
+            dusrano = tisrano;
+        }
+
+
+//        problem 23:Cross Pattern
+        int noOfRow = scr.nextInt();
+        for (int i =1;i<=noOfRow;i++){
+            for (int j =1;j<=noOfRow;j++){
+                if (i==j||i==noOfRow+1-j){
+                    System.out.print("*");
+
+                }
+                else System.out.print(" ");
+            }
+            System.out.println("");
+        }
 
 
 
+
+
+//        problem 24:K Pattern
+
+           for (int i =1;i<=noOfRow;i++){
+            for (int j =1;j<=noOfRow;j++){
+                if (1==j||i==((noOfRow-3)/2)+j||i==((noOfRow+5)/2)-j){
+                    System.out.print("*");
+
+                }
+                else System.out.print(" ");
+            }
+            System.out.println("");
+        }
 
 
 
@@ -259,4 +299,4 @@ public class Main {
 
     }
 }
-
+//
