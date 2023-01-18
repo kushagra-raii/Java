@@ -249,16 +249,16 @@ public class Main {
         }
 //
 //        problem 22:Fibonacci Series
-        int ekno =1;
-        int dusrano =1;
-
-        System.out.print(ekno + " " + dusrano + " ");
-        for (int i = 2; i < r; i++) {
-            int tisrano = ekno + dusrano;
-            System.out.print(tisrano + " ");
-            ekno = dusrano;
-            dusrano = tisrano;
-        }
+//        int ekno =1;
+//        int dusrano =1;
+//
+//        System.out.print(ekno + " " + dusrano + " ");
+//        for (int i = 2; i < r; i++) {
+//            int tisrano = ekno + dusrano;
+//            System.out.print(tisrano + " ");
+//            ekno = dusrano;
+//            dusrano = tisrano;
+//        }
 
 
 //        problem 23:Cross Pattern
