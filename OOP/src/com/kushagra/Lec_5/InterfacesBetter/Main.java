@@ -6,7 +6,8 @@ public class Main {
         Engine electric = new ElectricEngine();
         car.start();
         car.startMusic();
-        car.upgradeEngine(Engine electric);
+        car.upgradeEngine();
+        car.stop();
 
 
     }

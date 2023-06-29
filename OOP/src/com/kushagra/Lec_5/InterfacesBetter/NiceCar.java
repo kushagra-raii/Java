@@ -3,6 +3,7 @@ package com.kushagra.Lec_5.InterfacesBetter;
 public class NiceCar {
     private Engine engine;
     private Media player = new CDPlayer() ;
+    private Engine electricEngine = new ElectricEngine();
 
     public NiceCar() {
         engine = new PowerEngine();
@@ -24,7 +25,7 @@ public class NiceCar {
         player.stop();
     }
 
-    public void upgradeEngine(Engine engine){
-        this.engine = engine;
+    public void upgradeEngine(){
+        this.engine = electricEngine;
     }
 }
